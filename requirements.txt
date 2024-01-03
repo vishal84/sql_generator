@@ -4,3 +4,4 @@ google.cloud
 google-cloud-aiplatform>=1.38
 typing
 jq
+faiss
