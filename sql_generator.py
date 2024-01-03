@@ -12,7 +12,7 @@ from typing import List
 from tqdm import tqdm
 
 
-PROJECT = 'gcp-sre-edu-image-host'
+PROJECT = 'vish-cloud-dev'
 LOCATION = 'us-central1'
 CHAT_MODEL = 'codechat-bison@002'
 EMBEDDING_MODEL = 'textembedding-gecko@002'
