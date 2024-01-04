@@ -1,3 +1,16 @@
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"library","Description":"The content library housing the lab.","data_type":"STRING"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"slug","Description":"The unique identifier of the lab, within the library.","data_type":"STRING"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"version","Description":"The (author-defined) version of the lab. We recommend using semantic versioning, but do not enforce it.","data_type":"STRING"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"revision","Description":"The revision of the lab.","data_type":"STRING"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"title","Description":"The title of the lab, in the default_locale.","data_type":"STRING"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"level","Description":"The difficulty of the lab.","data_type":"STRING"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"version_published_at","Description":"The timestamp of when the version was first published.","data_type":"TIMESTAMP"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"revision_published_at","Description":"The timestamp of when the revision was published.","data_type":"TIMESTAMP"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"deprecated_at","Description":"The timestamp of when this lab was, or will be, deprecated.","data_type":"TIMESTAMP"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"is_gcp_content","Description":"True if the lab is part of the GCP curriculum. Note that this does not imply anything about the cloud environment. For example, a GCP Course about migrating from AWS to GCP may have labs that use AWS and labs that use GCP but all would have is_gcp_content set to True.","data_type":"BOOLEAN"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"rating","Description":"The average student rating (1-5) for this lab, across all records.","data_type":"INTEGER"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"lab_record_count","Description":"Number of times this lab has been taken.","data_type":"INTEGER"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"lab_record_90_day_count","Description":"Number of times this lab has been taken in the last 90 days.","data_type":"INTEGER"}
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_records","column_name":"lab_library","Description":"The library that houses the lab content that was taken.","data_type":"STRING"}
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_records","column_name":"lab_slug","Description":"The lab slug of the associated lab that was taken.","data_type":"STRING"}
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_records","column_name":"lab_version","Description":"The lab version of the associated lab that was taken.","data_type":"FLOAT"}
@@ -37,3 +50,22 @@
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_records","column_name":"spl_reseller","Description":"The name of the entity if this lab was taken as an SPL on an external platform rather than on Qwiklabs directly.","data_type":"STRING"}
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_records","column_name":"is_learner_facing","Description":"If True, the lab instance was taken on a deployment that is learner facing.","data_type":"BOOLEAN"}
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_records","column_name":"user_is_student","Description":"If True, the user has the role student.","data_type":"BOOLEAN"}
+
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"lab_instance_id","Description":"The Qwiklabs id that uniquely identifies this lab instance.","data_type":"STRING"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"assessment_id","Description":"The Qwiklabs id that uniquely identifies this assessment taken.","data_type":"STRING"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"assessment_sequence_no","Description":"The sequence of assessments for this user on this lab instance.","data_type":"INTEGER"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"is_most_recent_assessment","Description":"If this is the most recent assessment for this user on this lab instance.","data_type":"BOOLEAN"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"step_no","Description":"The sequence number of the tracking step as designed.","data_type":"INTEGER"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"step_method_name","Description":"The name of the method call of the tracking step.","data_type":"STRING"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"step_created_at","Description":"Timestamp of the tracking step creation.","data_type":"TIMESTAMP"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"step_updated_at","Description":"Timestamp of the most recent tracking step update.","data_type":"TIMESTAMP"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"step_completion_sequence","Description":"The sequence number in which the tracking step was actually completed.","data_type":"STRING"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"is_highest_completed_step","Description":"If this is the highest step completed by the user, not necessarily the most last in sequence.","data_type":"BOOLEAN"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"total_assessment_steps","Description":"The total number of steps in the assessment.","data_type":"INTEGER"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"assessment_possible_score","Description":"The total possible score for all steps in the assessment.","data_type":"INTEGER"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"step_points_possible","Description":"The number of possible points to be achieved in this step.","data_type":"INTEGER"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"step_score_achieved","Description":"The number of actual points achieved in this step.","data_type":"INTEGER"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"pct_possible_contribution","Description":"The possible percentage contribution to the overall assessment.","data_type":"INTEGER"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"pct_achieved_contribution","Description":"The actual percentage contribution to the overall assessment.","data_type":"INTEGER"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"completion_seconds","Description":"The number of seconds taken to complete this step.","data_type":"INTEGER"}
+{"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_assessment_detail","column_name":"pct_total_time","Description":"The percentage of time this step's completion represents as a share of the whole.","data_type":"INTEGER"}
