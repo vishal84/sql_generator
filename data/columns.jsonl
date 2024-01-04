@@ -11,6 +11,7 @@
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"rating","Description":"The average student rating (1-5) for this lab, across all records.","data_type":"INTEGER"}
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"lab_record_count","Description":"Number of times this lab has been taken.","data_type":"INTEGER"}
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"labs","column_name":"lab_record_90_day_count","Description":"Number of times this lab has been taken in the last 90 days.","data_type":"INTEGER"}
+
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_records","column_name":"lab_library","Description":"The library that houses the lab content that was taken.","data_type":"STRING"}
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_records","column_name":"lab_slug","Description":"The lab slug of the associated lab that was taken.","data_type":"STRING"}
 {"dataset_name":"ql-data-warehouse-prod.core","table_name":"lab_records","column_name":"lab_version","Description":"The lab version of the associated lab that was taken.","data_type":"FLOAT"}
