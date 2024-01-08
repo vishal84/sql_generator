@@ -146,7 +146,7 @@ def build_chat_request(query, matched_columns, matched_defns):
     IMPORTANT: Use ONLY the column names (column_name) mentioned in MATCHED_SCHEMA. Do not use ANY columns which are not provided in MATCHED_SCHEMA
     IMPORTANT: Associate column_name mentioned in MATCHED_SCHEMA only to the table_name specified under MATCHED_SCHEMA.
     IMPORTANT: Please ensure the description makes sense for the columns being used.
-    IMPORTANT: All table references must be of the form dataset_name.table_name inside the FROM clause.
+    IMPORTANT: All table references must be of the form concord-prod.dataset_name.table_name inside the FROM clause.
     IMPORTANT: UNION is not a valid operator. You must use UNION ALL or UNION DISTINCT
     IMPORTANT: Use SQL 'AS' statement to assign a single word new name temporarily to a table column or even a table wherever needed.  
     """
